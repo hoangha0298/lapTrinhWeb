@@ -1,0 +1,410 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+    border: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/* placehold */
+/* Chrome, Opera, Safari */
+/* chỉnh mầu cho chữ trong ô tìm kiếm  */
+::-webkit-input-placeholder {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14.8px;
+    color: #196188;
+  }
+
+
+  /* dùng chung */
+.center-item{
+    position: absolute;
+    transform: translate(0,-50%);
+    top: 50%;
+    display: flex;
+}
+.clear-fix::after{
+    clear: both;
+    display: block;
+    content: "";
+}
+
+/* container */
+.container{
+    position: relative;
+    width: 1920px;
+    margin: 0% auto;
+    background: linear-gradient(180deg, rgba(17,39,62,1) 0%, rgba(7,24,49,1) 100%);  
+}
+.container >*{
+    position: relative;
+}
+.image-background{  /* sửa */
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 650px;
+    padding: 0px 375px;
+    background-repeat: no-repeat;
+}
+.button-play{
+    position: absolute;
+    transform: translate(50%, -50%);
+    top: 50%;
+    right: 50%;
+    border-radius: 50%;
+    height: 65px;
+    width: 65px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    line-height: 65px;
+    font-size: 30px;
+    z-index: 1;
+}
+.image-background-gradient{ /* sửa */
+    position: absolute;
+    top: 0px;
+    left: 375px;
+    right: 375px;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0,0,0,0.3) 55%, rgba(2, 11, 17, 0.9) 100%);  
+}
+.infomation-game{
+    position: absolute;
+    bottom: 40px;
+    left: 415px;
+    display: flex;
+    font-size: 25px;
+}
+.infomation-game{
+    line-height: 1.88rem;
+    z-index: 1;
+}
+.infomation-game-right{
+    padding-left: 30px;
+    display: block;
+}
+.infomation-game-right-star i{
+    font-size: 20px;
+    color: #E9BB00;
+}
+.infomation-game-btn{
+    border: 1px solid white;
+    border-radius: 4px;
+    font-size: 20px;
+    line-height: 44px;
+    padding: 0px 27px;
+    margin-right: 4px;
+}
+.ifomation-game-sale{
+    height: 30px;
+    margin-left: 10px;
+    width: 47px;
+    border-radius: 5px;
+    background-color: #FF3B09;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+}
+.ifomation-game-face-like{
+    z-index: 1;
+    position: absolute;
+    bottom: 40px;
+    right: 500px;
+    height: 20px;
+    /* width: 75px; */
+    border-radius: 3px;
+    padding: 0px 4px;
+    background-color: #4267B2;
+    display: flex;
+}
+.ifomation-game-face-like *{
+    line-height: 20px !important;
+    font-size: 11px;
+}
+.ifomation-game-face-like h1{
+    padding: 0px 5px;
+}
+
+/* contact  */
+.contact{
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px;
+    z-index: 2;
+}
+
+
+        /* header */
+
+        .header {
+            position: fixed;
+            top: 0px;
+            height: 87px;
+            width: 1920px;
+            padding: 0px 375px;
+            background: linear-gradient(270deg, rgba(3, 6, 11, 1) 0%, rgba(17, 39, 62, 1) 100%);
+            display: flex;
+            align-items: center;
+            z-index: 2;
+        }
+
+        .header>* {
+            display: flex;
+            align-items: center;
+        }
+
+        .header * {
+            font-size: 15px;
+            color: #2CBCFC;
+            white-space: nowrap;
+        }
+
+        /* header logo  */
+        .header-logo {
+            margin-right: 45px;
+        }
+
+        /* header center */
+        .header-center {
+            margin-right: 47px;
+        }
+
+        .header-center img {
+            height: 13px;
+        }
+
+        .header-home {
+            margin: 0px 20px 0px 7px;
+        }
+
+        /* header menu */
+        .header-menu {
+            padding-left: 6px;
+            cursor: pointer;
+        }
+
+        /* sub menu */
+        .header-menu-sub {
+            position: relative;
+            display: none;
+        }
+
+        .header-sub-menu-game {
+            position: absolute;
+            top: 30px;
+            left: -140px;
+            border-radius: 4px;
+            background: linear-gradient(270deg, rgba(3, 6, 11, 1) 0%, rgba(17, 39, 62, 1) 100%);
+            padding: 20px;
+            padding-right: 50px;
+            display: flex;
+        }
+
+        .header-sub-menu-game>li {
+            padding-right: 70px;
+        }
+
+        .sub-menu-item {
+            display: block;
+        }
+
+        .sub-menu-item li {
+            width: 100px;
+        }
+
+        .sub-menu-item a {
+            display: block;
+            font-size: 15px;
+            line-height: 37px;
+            color: #066899;
+            transition: 0.2s ease-out;
+        }
+
+        .sub-menu-item a:hover {
+            color: inherit;
+            font-size: 16.5px;
+        }
+
+        /* header search */
+        .header-search {
+            padding-left: 10px;
+            margin-right: 100px;
+            height: 30px;
+            width: 305px;
+            border: 1px solid steelblue;
+            border-radius: 5px;
+            background-color: rgb(13, 34, 55);
+        }
+
+        .header-search-input {
+            height: 100%;
+            width: 88%;
+            margin-right: 2%;
+            font-size: 15px;
+            background-color: rgba(0, 0, 0, 0);
+            outline: 0px;
+        }
+
+        .header-btn-search {
+            background-color: rgba(0, 0, 0, 0);
+            outline: 0px;
+        }
+
+        /* header right */
+        .header-right{
+            position: relative;
+        }
+        .header-btn {
+            margin: 2px;
+            border-radius: 3px;
+            padding: 0px 8px;
+            font-size: 12px;
+            height: 30px;
+            display: flex;
+            align-content: center;
+            -webkit-align-items: center;
+            background-color: rgba(40, 135, 220, 0.15);
+            border: 1px solid rgba(40, 135, 220, 0.25);
+        }
+
+        .header-btn i,
+        .header-btn img {
+            margin-right: 8px;
+        }
+
+        .btn-download {
+            background-color: rgb(0, 177, 255);
+            color: white;
+        }
+
+        .dots-btn {
+            width: 22px;
+            height: 22px;
+            line-height: 22px;
+            text-align: center;
+            border-radius: 50%;
+            background-color: red;
+            border: 1px solid white;
+            font-size: 13px;
+            color: white;
+            transform: translate(50%, -50%);
+            position: absolute;
+
+            top: 0;
+            right: 0;
+        }
+/* header user  */
+.header-user{
+    position: absolute;
+    top: 100%;
+    right: 0px;
+    padding: 18px;
+    color: rgb(3, 7, 12);
+    background: linear-gradient(135deg, rgba(15, 34, 55, 1) 0%, rgba(3, 7, 12, 1) 100%);  
+    display: none;
+    border-radius: 3px;
+}
+.header-user i{
+    float: right;
+}
+.header-user hr{
+    height: 1px;
+    background-color: #2CBCFC;
+}
+.header-user *{
+    font-size: 14px;
+    line-height: 37px !important;
+}
+.header-avata-name{
+    display: flex;
+    line-height: 42px;
+    margin-bottom: 12px;
+}
+.header-avata{
+    border-radius: 50%;
+    margin-right: 18px;
+    width: 42px;
+    height: 42px;
+}
+.header-wallet{
+    width: 180px;
+}
+.header-wallet-money{
+    color: white;
+    float: right;
+}
+
+
+/* content-text */
+.content-text{  /* sửa */
+    width: 100%;
+    height: 677px;
+}
+.content-text *{
+    color: white;
+    text-align: left;   
+}
+
+
+/* content  */
+
+
+/* footer */
+.footer{
+    height: 475px;
+    width: 100%;
+    padding: 0px 375px;
+}
+.footer-infomation{
+    padding: 130px 0px 40px;
+    border-bottom: 1px solid rgb(26, 106, 150);
+}
+.footer-infomation-col{
+    margin-right: 66px;
+    max-width: 30%;
+    display: block;
+    float: left;
+}
+.footer-infomation-col p, .footer-infomation-col a{
+    color: #2CBCFC;
+    line-height: 37px;
+    font-size: 14px;
+}
+.footer-infomation-col h3{
+    line-height: 39px;
+    font-weight: 300;
+}
+.footer-icon-contacts{
+    margin-top: 20px;
+    height: 20px;
+    display: flex;
+}
+.footer-icon-contacts img, .footer-icon-contacts i{
+    color: #E8EAEC;
+    height: 20px;
+    font-size: 20px;
+}
+.footer-icon-contacts a{
+    margin-right: 10px;
+    line-height: 0px;
+}
+/* bottom footer*/
+.footer-bottom{
+    width: 100%;
+    padding: 47px 0px;
+    font-size: 17px;
+    text-align: left;
+}

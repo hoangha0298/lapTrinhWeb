@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            border: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* placehold */
+        /* Chrome, Opera, Safari */
+        ::-webkit-input-placeholder {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14.8px;
+            color: #196188;
+        }
+
+        /* Firefox 19+ */
+        ::-moz-placeholder {
+            font-style: italic;
+        }
+
+        /* IE 10+ */
+        :-ms-input-placeholder {
+            font-style: italic;
+        }
+
+        /* Firefox 18- */
+        :-moz-placeholder {
+            font-style: italic;
+        }
+
+
+        /* dùng chung */
+        .clear-fix::after {
+            clear: both;
+            display: block;
+            content: "";
+        }
+
+
+        /* header */
+
+        .header {
+            position: fixed;
+            top: 0px;
+            height: 87px;
+            width: 1920px;
+            padding: 0px 375px;
+            background: linear-gradient(270deg, rgba(3, 6, 11, 1) 0%, rgba(17, 39, 62, 1) 100%);
+            display: flex;
+            align-items: center;
+            z-index: 2;
+        }
+
+        .header>* {
+            display: flex;
+            align-items: center;
+        }
+
+        .header * {
+            font-size: 15px;
+            color: #2CBCFC;
+            white-space: nowrap;
+        }
+
+        /* header logo  */
+        .header-logo {
+            margin-right: 45px;
+        }
+
+        /* header center */
+        .header-center {
+            margin-right: 47px;
+        }
+
+        .header-center img {
+            height: 13px;
+        }
+
+        .header-home {
+            margin: 0px 20px 0px 7px;
+        }
+
+        /* header menu */
+        .header-menu {
+            padding-left: 6px;
+            cursor: pointer;
+        }
+
+        /* sub menu */
+        .header-menu-sub {
+            position: relative;
+            display: none;
+        }
+
+        .header-sub-menu-game {
+            position: absolute;
+            top: 30px;
+            left: -140px;
+            border-radius: 4px;
+            background: linear-gradient(270deg, rgba(3, 6, 11, 1) 0%, rgba(17, 39, 62, 1) 100%);
+            padding: 20px;
+            padding-right: 50px;
+            display: flex;
+        }
+
+        .header-sub-menu-game>li {
+            padding-right: 70px;
+        }
+
+        .sub-menu-item {
+            display: block;
+        }
+
+        .sub-menu-item li {
+            width: 100px;
+        }
+
+        .sub-menu-item a {
+            display: block;
+            font-size: 15px;
+            line-height: 37px;
+            color: #066899;
+            transition: 0.2s ease-out;
+        }
+
+        .sub-menu-item a:hover {
+            color: inherit;
+            font-size: 16.5px;
+        }
+
+        /* header search */
+        .header-search {
+            padding-left: 10px;
+            margin-right: 100px;
+            height: 30px;
+            width: 305px;
+            border: 1px solid steelblue;
+            border-radius: 5px;
+            background-color: rgb(13, 34, 55);
+        }
+
+        .header-search-input {
+            height: 100%;
+            width: 88%;
+            margin-right: 2%;
+            font-size: 15px;
+            background-color: rgba(0, 0, 0, 0);
+            outline: 0px;
+        }
+
+        .header-btn-search {
+            background-color: rgba(0, 0, 0, 0);
+            outline: 0px;
+        }
+
+        /* header right */
+        .header-btn {
+            margin: 1.5px;
+            border-radius: 3px;
+            padding: 0px 8px;
+            font-size: 12px;
+            height: 30px;
+            display: flex;
+            align-content: center;
+            -webkit-align-items: center;
+            background-color: rgba(40, 135, 220, 0.15);
+            border: 1px solid rgba(40, 135, 220, 0.25);
+        }
+
+        .header-btn i,
+        .header-btn img {
+            margin-right: 8px;
+        }
+
+        .btn-download {
+            background-color: rgb(0, 177, 255);
+            color: white;
+        }
+
+        .dots-btn {
+            width: 22px;
+            height: 22px;
+            line-height: 22px;
+            text-align: center;
+            border-radius: 50%;
+            background-color: red;
+            border: 1px solid white;
+            font-size: 13px;
+            color: white;
+            transform: translate(50%, -50%);
+            position: absolute;
+
+            top: 0;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+
+        <div class="header">
+
+            <img src="icon/logo.png" class="header-logo">
+
+            <div class="header-center">
+                <img src="icon/home.png">
+                <div class="header-home">
+                    <a href="https://www.google.com.vn">Home</a>
+                </div>
+                <img src="icon/gamecata.png">
+
+                <div class="header-menu" onclick="menuDropDow('header-menu-sub')">
+                    Thể loại game
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <div class="header-menu-sub" id="header-menu-sub">
+                    <ul class="header-sub-menu-game">
+                        <li>
+                            <ul class="sub-menu-item">
+                                <li><a href="https://www.google.com.vn">Hành động</a></li>
+                                <li><a href="#">Bắn súng</a></li>
+                                <li><a href="#">Game ARPG</a></li>
+                                <li><a href="#">Game RPG</a></li>
+                                <li><a href="#">Sport</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="sub-menu-item">
+                                <li><a href="#">Puzzle</a></li>
+                                <li><a href="#">Racing</a></li>
+                                <li><a href="#">Casual</a></li>
+                                <li><a href="#">Strategy</a></li>
+                                <li><a href="#">Adventure</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div>
+                <form action="" class="header-search">
+                    <input type="text" placeholder="Search game" class="header-search-input">
+                    <button class="header-btn-search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="header-right">
+                <a href="#" class="header-btn btn-download">
+                    <img src="icon/download.png" height="19px">
+                    Tải phần mềm
+                </a>
+                <a href="#" class="header-btn">
+                    <img src="icon/account.png" height="19px">
+                    <!-- <img src="https://tophinhanhdep.com/wp-content/uploads/2017/07/avatar-de-thuong-271x300.jpg" -->
+                            height="19px" style="border-radius: 50%;">
+                    My Account
+                </a>
+                <a href="#" class="header-btn" style="position: relative;">
+                    <img src="icon/download.png" height="19px">
+                    Giỏ Hàng
+                    <div class="dots-btn">
+                        1
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>

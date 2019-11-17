@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chi tiết game</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="content.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- image background -->
+        <div class="image-background">
+            <img src="https://pmcvariety.files.wordpress.com/2019/06/mdqkmqikqlrxso5g5mwkmn.jpg?w=1000&h=563&crop=1"
+                width="100%" height="100%">
+            <div class="image-background-gradient">
+                <div class="infomation-game"></div>
+            </div>
+            <div class="button-play">
+                <i class="fas fa-play"></i>
+            </div>
+            <!-- ô chứa thông tin game  -->
+            <div class="infomation-game">
+                <img src="https://assets1.ignimgs.com/2018/04/17/god-of-war-m-rating-1524001660097.jpg" width="140px">
+                <div class="infomation-game-right">
+                    <div style="display: flex;">
+                        God Of War 4 (2018)
+                        <div class="ifomation-game-sale">-70%</div>
+                    </div>
+                    <!-- 5 sao -->
+                    <div class="infomation-game-right-star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <s style="color: #FF8800; font-size: 19px;">450.000 VND</s>
+                    <div style="color: #FF8800;">350.000 VND</div>
+                    <div style="display: flex; margin-top: 6px;">
+                        <div class="infomation-game-btn">Thuê game</div>
+                        <div class="infomation-game-btn" style="padding: 0px 6px 0px 10px;">
+                            3.000 đ / 3h
+                            <i class="fas fa-angle-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ifomation-game-face-like">
+                <i class="fas fa-thumbs-up"></i>
+                <h1>Like</h1>
+                <p>122k</p>
+            </div>
+        </div>
+
+        <!-- contact  -->
+        <div class="contact">
+            <img src="icon/tutorial.png">
+            <br>
+            Hướng dẫn
+            <br>
+            <img src="icon/messenger.png">
+            <br>
+            Hỗ trợ
+        </div>
+
+        <!-- header -->
+        <div class="header">
+
+            <!-- logo  -->
+            <img src="icon/logo.png" class="header-logo">
+
+            <!-- chứa nút home , nút thể loại game  -->
+            <div class="header-center">
+                <img src="icon/home.png">
+                <div class="header-home">
+                    <a href="https://www.google.com.vn">Home</a>
+                </div>
+                <img src="icon/gamecata.png">
+
+                <div class="header-menu" onclick="menuDropDow('header-menu-sub')">
+                    Thể loại game
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <div class="header-menu-sub" id="header-menu-sub">
+                    <ul class="header-sub-menu-game">
+                        <li>
+                            <ul class="sub-menu-item">
+                                <li><a href="https://www.google.com.vn">Hành động</a></li>
+                                <li><a href="#">Bắn súng</a></li>
+                                <li><a href="#">Game ARPG</a></li>
+                                <li><a href="#">Game RPG</a></li>
+                                <li><a href="#">Sport</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="sub-menu-item">
+                                <li><a href="#">Puzzle</a></li>
+                                <li><a href="#">Racing</a></li>
+                                <li><a href="#">Casual</a></li>
+                                <li><a href="#">Strategy</a></li>
+                                <li><a href="#">Adventure</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ô tìm kiếm  -->
+            <div>
+                <form action="" class="header-search">
+                    <input type="text" placeholder="Search game" class="header-search-input">
+                    <button class="header-btn-search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="header-right">
+                <div class="header-btn btn-download">
+                    <img src="icon/download.png" height="19px">
+                    Tải phần mềm
+                </div>
+                <div class="header-btn" onclick="menuDropDow('header-user')">
+                    <img src="https://tophinhanhdep.com/wp-content/uploads/2017/07/avatar-de-thuong-271x300.jpg"
+                        height="19px" width="19px" style="border-radius: 50%;">
+                    My Account
+                </div>
+                <div class="header-btn">
+                    <img src="icon/download.png" height="19px">
+                    Giỏ Hàng
+                    <div class="dots-btn">
+                        1
+                    </div>
+                </div>
+                <ul class="header-user" id="header-user">
+                    <li class="header-avata-name">
+                        <img src="https://tophinhanhdep.com/wp-content/uploads/2017/07/avatar-de-thuong-271x300.jpg"
+                            class="header-avata">
+                        Bluesky19800
+                    </li>
+                    <li class="header-wallet clear-fix">
+                        Số dư khả dụng
+                        <div class="header-wallet-money">300.000 đ</div>
+                    </li>
+                    <li class="header-wallet clear-fix">
+                        Số dư Panding
+                        <div class="header-wallet-money">300.000 đ</div>
+                        <hr>
+                    </li>
+                    <li class="header-user-action">
+                        Quản lý Shop
+                        <hr>
+                    </li>
+                    <li class="clear-fix">
+                        Lịch sử giao dịch
+                        <i class="fas fa-angle-right"></i>
+                        <hr>
+                    </li>
+                    <li class="clear-fix">
+                        Nạp tiền
+                        <i class="fas fa-angle-right"></i>
+                        <hr>
+                    </li>
+                    <li class="clear-fix">
+                        Đăng xuất
+                        <i class="fas fa-angle-right"></i>
+                        <hr>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- content text -->
+        <div class="content-text">
+        </div>
+
+        <!-- content -->
+        <div class="content">
+            <div class="content-game">
+
+                <div class="menu-view-top">
+                    <div class="menu-view-top-left">CHI TIẾT SẢN PHẨM</div>
+                    <div class="menu-view-top-center">THÔNG TIN CẤU HÌNH</div>
+                    <div class="menu-view-top-right">ĐÁNH GIÁ(0)</div>
+                </div>
+
+                <div class="infomation-product">
+                    ONLY ON PLAYSTATION®
+                    <br>
+                    From Santa Monica Studio and creative director Cory Barlog comes a new beginning for God of War.
+                    Living as a man outside the shadow of the gods, Kratos must adapt to unfamiliar lands,
+                    unexpected threats, and a second chance at being a father.
+                    Together with his son Atreus, the pair will venture into the brutal Norse wilds and fight to fulfill
+                    a deeply personal quest.
+                </div>
+
+                <div id="species-game">GAME CÙNG THỂ LOẠI</div>
+
+                <div id="list-game-bottom"></div>
+
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="footer">
+            <div class="footer-infomation clear-fix">
+                <div class="footer-infomation-col">
+                    <h3>Thông tin</h3>
+                    <a href="#">Giới thiệu về Divine Shop</a>
+                    <br>
+                    <a href="#">Game bản quyền là gì?</a>
+                    <br>
+                    <a href="#">Chính sách bảo mật</a>
+                    <br>
+                    <a href="#">Điều khoản dịch vụ</a>
+                </div>
+                <div class="footer-infomation-col">
+                    <h3>Chăm sóc khách hàng</h3>
+                    <a href="#">Liên hệ</a>
+                    <br>
+                    <a href="#">Chế độ bảo hành</a>
+                </div>
+                <div class="footer-infomation-col">
+                    <h3>Liên hệ</h3>
+                    <p>Địa chỉ: 1060 Đường Láng-Đống Đa-Hà Nội</p>
+                    <p>Hotline: 096.29.15988 (24/7)</p>
+                    Kết nối
+                    <div class="footer-icon-contacts">
+                        <a href="#">
+                            <img src="icon/facebook.png">
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#">
+                            <img src="icon/google.png">
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- liên kết facebook -->
+                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FSteam%2F&tabs=timeline&width=285&height=180&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" 
+                    width="285" height="180" style="border:none;overflow:hidden; float: right; border-radius: 5px;" scrolling="no" 
+                    frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+            </div>
+            <div class="footer-bottom">
+                <i class="far fa-copyright"></i>
+                Copyright 2018 DTS Group
+            </div>
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>

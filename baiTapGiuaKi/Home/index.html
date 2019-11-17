@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="content.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- image background -->
+        <div class="image-background">
+            <div class="image-background-gradient"></div>
+        </div>
+
+        <!-- contact  -->
+        <div class="contact">
+            <img src="icon/tutorial.png">
+            <br>
+            Hướng dẫn
+            <br>
+            <img src="icon/messenger.png">
+            <br>
+            Hỗ trợ
+        </div>
+
+        <!-- header -->
+        <div class="header">
+
+            <img src="icon/logo.png" class="header-logo">
+
+            <div class="header-center">
+                <img src="icon/home.png">
+                <div class="header-home">
+                    <a href="https://www.google.com.vn">Home</a>
+                </div>
+                <img src="icon/gamecata.png">
+
+                <div class="header-menu" onclick="menuDropDow('header-menu-sub')">
+                    Thể loại game
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <div class="header-menu-sub" id="header-menu-sub">
+                    <ul class="header-sub-menu-game">
+                        <li>
+                            <ul class="sub-menu-item">
+                                <li><a href="https://www.google.com.vn">Hành động</a></li>
+                                <li><a href="#">Bắn súng</a></li>
+                                <li><a href="#">Game ARPG</a></li>
+                                <li><a href="#">Game RPG</a></li>
+                                <li><a href="#">Sport</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="sub-menu-item">
+                                <li><a href="#">Puzzle</a></li>
+                                <li><a href="#">Racing</a></li>
+                                <li><a href="#">Casual</a></li>
+                                <li><a href="#">Strategy</a></li>
+                                <li><a href="#">Adventure</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div>
+                <form action="" class="header-search">
+                    <input type="text" placeholder="Search game" class="header-search-input">
+                    <button class="header-btn-search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="header-right">
+                <div href="#" class="header-btn btn-download">
+                    <img src="icon/download.png" height="19px">
+                    Tải phần mềm
+                </div>
+                <div class="header-btn">
+                    <img src="icon/account.png" height="19px">
+                    My Account
+                </div>
+                <div href="#" class="header-btn" style="position: relative;">
+                    <i class="fas fa-shopping-cart"></i>
+                    Giỏ Hàng
+                    <div class="dots-btn">
+                        1
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- content text -->
+        <div class="content-text">
+            <h1>METAL GEAR RISING REVENGEANCE</h1>
+            <p>Metal Gear Rising Revengeance là một game chặt chém (hack vaf slash)
+                được phát triến bởi Patinum Games và sản xuất bởi Kojima Productions.</p>
+            <div>
+                <a href="#">
+                    <div class="btn-detail">Chi tiết</div>
+                </a>
+            </div>
+        </div>
+
+        <!-- content -->
+        <div class="content">
+            <div class="content-game">
+                <div class="content-header">
+                    <ul>
+                        <li>GAME PLATFORM</li>
+                        <li class="content-header-item"><a href="#">
+                                <img src="icon/steam.png">
+                                Steam
+                            </a></li>
+                        <li class="content-header-item"><a href="#">
+                                <img src="icon/Origin.png">
+                                Origin
+                            </a></li>
+                        <li class="content-header-item"><a href="#">
+                                <img src="icon/Uplay-icon.png">
+                                Uplay
+                            </a></li>
+                        <li class="content-header-item"><a href="#">
+                                <img src="icon/Ubisoft_logo.png">
+                                Ubisoft
+                            </a></li>
+                        <li class="content-header-item"><a href="#">
+                                <img src="icon/gog.png">
+                                GOG
+                            </a></li>
+                        <li class="content-header-item"><a href="#">
+                                <img src="icon/Blizzard-logo.png">
+                                Blizzard
+                            </a></li>
+                    </ul>
+                </div>
+
+                <!-- sort  -->
+                <div class="content-game-sort clear-fix">
+                    <div class="choice-game-sort">
+                        <div class="choice-game-sort-left">
+                            Sắp xếp theo
+                        </div>
+                        <div class="choice-game-sort-right">
+                            <p>Mặc định</p>
+                            <i class="fas fa-angle-down"></i>
+                            <ul>
+                                <li>a</li>
+                                <li>b</li>
+                                <li>c</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- list game  -->
+                <div id="list-game">
+                    
+                </div>
+
+                <div class="present-view">
+                    <ul id="present-view"></ul>
+                </div>
+
+                <div class="menu-view-top">
+                    <div class="menu-view-top-left">TOP GAME THUÊ NHIỀU</div>
+                    <div class="menu-view-top-center">TOP GAME MỚI ĐƯỢC THUÊ GẦN NHẤT</div>
+                    <div class="menu-view-top-right">TOP GAME MỚI NHẤT</div>
+                </div>
+
+                <div class="content-slide">
+                    <img src="https://compass-ssl.xbox.com/assets/ef/06/ef063e83-6756-406c-a1a0-8ce5774ed403.jpg?n=210345234_Page-Hero-1084_1920x720.jpg"
+                        width="100%">
+                    <div class="slide-arrow-left">
+                        <i class="fas fa-chevron-left"></i>
+                    </div>
+                    <div class="slide-arrow-right">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="text-in-slide">
+                        <h2>The Witcher 3 Special Edition</h2>
+                        <p>Metal Gear Rising Revengeance là một game chặt chém (hack vaf slash)
+                            được phát triến bởi Patinum Games và sản xuất bởi Kojima Productions.</p>
+                    </div>
+                </div>
+
+                <div id="list-game-bottom"></div>
+
+                <div class="view-all">
+                    <a href="#">XEM TẤT</a>
+                    <i class="fas fa-angle-double-right"></i>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="footer">
+            <div class="footer-infomation clear-fix">
+                <div class="footer-infomation-col">
+                    <h3>Thông tin</h3>
+                    <a href="#">Giới thiệu về Divine Shop</a>
+                    <br>
+                    <a href="#">Game bản quyền là gì?</a>
+                    <br>
+                    <a href="#">Chính sách bảo mật</a>
+                    <br>
+                    <a href="#">Điều khoản dịch vụ</a>
+                </div>
+                <div class="footer-infomation-col">
+                    <h3>Chăm sóc khách hàng</h3>
+                    <a href="#">Liên hệ</a>
+                    <br>
+                    <a href="#">Chế độ bảo hành</a>
+                </div>
+                <div class="footer-infomation-col">
+                    <h3>Liên hệ</h3>
+                    <p>Địa chỉ: 1060 Đường Láng-Đống Đa-Hà Nội</p>
+                    <p>Hotline: 096.29.15988 (24/7)</p>
+                    Kết nối
+                    <div class="footer-icon-contacts">
+                        <a href="#">
+                            <img src="icon/facebook.png">
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#">
+                            <img src="icon/google.png">
+                        </a>
+                    </div>
+                </div>
+                
+                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FSteam%2F&tabs=timeline&width=285&height=180&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" 
+                    width="285" height="180" style="border:none;overflow:hidden; float: right; border-radius: 5px;" scrolling="no" 
+                    frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+            </div>
+            <div class="footer-bottom">
+                <i class="far fa-copyright"></i>
+                Copyright 2018 DTS Group
+            </div>
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
